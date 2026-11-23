@@ -18,7 +18,7 @@
       ];
 
       tools = pkgs: {
-        ganymede = with pkgs; [ claude-code glow w3m ];
+        ganymede = with pkgs; [ claude-code glow w3m tmux ];
       };
 
       mkDots = pkgs: p: pkgs.runCommand "dots-${p}" { } ''
