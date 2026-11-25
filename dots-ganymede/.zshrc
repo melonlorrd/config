@@ -250,3 +250,6 @@ EOF
             ;;
     esac
 }
+
+# direnv: load .envrc (e.g. `use flake`) on cd. Keep this last.
+eval "$(direnv hook zsh)"
