@@ -18,7 +18,7 @@
       ];
 
       tools = pkgs: {
-        ganymede = with pkgs; [ claude-code glow tmux helix direnv nix-direnv];
+        ganymede = with pkgs; [ claude-code glow tmux direnv nix-direnv];
       };
 
       mkDots = pkgs: p: pkgs.runCommand "dots-${p}" { } ''
